@@ -4,4 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "dora",
+    "jupyter>=1.1.1",
+    "mypy>=1.19.0",
+    "pandas>=2.3.3",
+]
+
+[tool.uv.sources]
+dora = { git = "https://github.com/NathanEpstein/Dora.git" }
